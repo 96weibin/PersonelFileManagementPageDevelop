@@ -1,0 +1,11 @@
+@OneToMany(fetch = FetchType.EAGER)
+	@Where(clause = "masterFlag=1 and validFlag = 1")
+	@OrderBy(value="id desc")
+	@JoinColumn(name="Employee_FK",insertable=false,updatable=false,referencedColumnName="employee_FK")
+	private List<Employeeoperationposition> employeeoperationpositions;
+
+
+@ManyToOne(fetch = FetchType.EAGER,optional=true)
+@JoinColumn(name="Employee_FK",insertable=false,updatable=false ,referencedColumnName="employee_FK")
+private PersonFileManagement pfm;
+		

@@ -1,0 +1,344 @@
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 86px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 86px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  html {
+    font-size: 92px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 100px;
+  }
+}
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+.edit {
+  background: #f39c12;
+}
+.numLine {
+  background: #F9F9F9;
+}
+.evenLine {
+  background: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.14rem;
+}
+html {
+  min-width: 1200px;
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+}
+header {
+  background: #fff;
+  width: 100%;
+  height: 0.5rem;
+}
+header .title {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin: 0.1rem 0 0 0.5rem;
+  float: left;
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: #2980b9;
+}
+header .btns {
+  height: 0.4rem;
+  width: 1.5rem;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.4rem;
+  float: right;
+  margin: 0 0.5rem 0 0;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+  color: #ecf0f0;
+  font-weight: bold;
+}
+header .btns .refresh {
+  width: 0.5rem;
+  border-right: 1px solid #DDDDDD;
+  background: #2ecc71;
+}
+header .btns .search {
+  width: 0.5rem;
+  border-right: 1px solid #DDDDDD;
+  background: #1abc9c;
+}
+header .btns .save {
+  width: 0.5rem;
+  border-right: 1px solid #DDDDDD;
+  background: #16a085;
+}
+header .btns div {
+  float: left;
+  box-sizing: border-box;
+}
+nav {
+  width: 95%;
+  margin: auto;
+  padding: 0 1px;
+  height: 1.5rem;
+  background: #95a5a6;
+}
+nav label {
+  margin: 0;
+  padding: 0;
+}
+nav input {
+  width: 50px;
+  height: 70%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0.01rem;
+}
+nav div {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+nav .baseInfo {
+  background: #DDDDDD;
+}
+nav .dateInfo {
+  background: #bdc3c7;
+}
+nav .trainingInfo {
+  background: #95a5a6;
+}
+article {
+  width: 95%;
+  margin: auto;
+  border-left: 1px solid #2980b9;
+  border-bottom: 1px solid #2980b9;
+  border-right: 1px solid #2980b9;
+  position: relative;
+  overflow: auto;
+  height: 6rem;
+}
+article .item {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding: 0 0.05rem;
+  border: 1px solid #DDDDDD;
+  float: left;
+}
+article .item input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+article .lineNum {
+  width: 0.3rem;
+}
+article .emoloyee_FK {
+  width: 0.8rem;
+}
+article .employee_name {
+  width: 0.6rem;
+}
+article .sex {
+  width: 0.4rem;
+}
+article .jobeTitle {
+  width: 0.8rem;
+}
+article .jobeType {
+  width: 0.7rem;
+}
+article .source {
+  width: 0.7rem;
+}
+article .educationBackground {
+  width: 0.5rem;
+}
+article .dateOfRegister {
+  width: 0.85rem;
+}
+article .dateOfPositive {
+  width: 0.85rem;
+}
+article .operation {
+  width: 0.7rem;
+}
+article .operationPosition {
+  width: 0.5rem;
+}
+article .trainer {
+  width: 0.85rem;
+}
+article .oldTeacher {
+  width: 0.85rem;
+}
+article .dateOfBeginTraining {
+  width: 0.9rem;
+}
+article .dateOfFinishTraining {
+  width: 0.9rem;
+}
+article .actualTrainingCycle {
+  width: 0.9rem;
+}
+article .standardTrainingCycle {
+  width: 0.9rem;
+}
+article .oneTimesPass {
+  width: 0.9rem;
+}
+article .trainingMachine {
+  width: 0.7rem;
+}
+article .reasonsForFailure {
+  width: 0.8rem;
+}
+article .dateOfWork {
+  width: 0.8rem;
+}
+article .onTheJob {
+  width: 0.7rem;
+}
+article .dayOfOnJob {
+  width: 0.7rem;
+}
+article .yearOfOnJob {
+  width: 0.7rem;
+}
+article .dateOfResign {
+  width: 0.8rem;
+}
+article .abolish {
+  width: 0.7rem;
+}
+article .dimissionType {
+  width: 0.7rem;
+}
+article .dimissionReason {
+  width: 0.7rem;
+}
+article .telephone {
+  width: 1rem;
+}
+article .formTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25.9rem;
+  background: #1abc9c;
+  height: 0.4rem;
+  z-index: 3;
+}
+article .firstRow {
+  width: 25.9rem;
+  margin-top: 0.4rem;
+}
+article .formRow {
+  width: 25.9rem;
+}
+article .formRow .source,
+article .formRow .educationBackground,
+article .formRow .dateOfBeginTraining,
+article .formRow .dateOfFinishTraining,
+article .formRow .trainer,
+article .formRow .oldTeacher,
+article .formRow .standardTrainingCycle,
+article .formRow .trainingMachine,
+article .formRow .reasonsForFailure,
+article .formRow .dimissionType,
+article .formRow .dimissionReason {
+  padding: 0;
+}
+article .formRow .source {
+  width: 0.8rem;
+}
+article .formRow .educationBackground {
+  width: 0.6rem;
+}
+article .formRow .dateOfBeginTraining {
+  width: 1rem;
+}
+article .formRow .dateOfFinishTraining {
+  width: 1rem;
+}
+article .formRow .trainer {
+  width: 0.95rem;
+}
+article .formRow .oldTeacher {
+  width: 0.95rem;
+}
+article .formRow .standardTrainingCycle {
+  width: 1rem;
+}
+article .formRow .trainingMachine {
+  width: 0.8rem;
+}
+article .formRow .reasonsForFailure {
+  width: 0.9rem;
+}
+article .formRow .dimissionType {
+  width: 0.8rem;
+}
+article .formRow .dimissionReason {
+  width: 0.8rem;
+}
+article .formRow .oDate {
+  height: 0.4rem;
+  border: none;
+  margin: 0;
+}
+article .formRow .oDate input {
+  padding: 0;
+  height: 0.4rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background: #fff;
+}
+article .formRow .oDate .input-group-addon {
+  padding: 0;
+  height: 0.3rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  font-size: none;
+  background: #fff;
+}
+article .formRow .oDate .input-group-addon .glyphicon {
+  padding: 0;
+  width: auto;
+  top: 0;
+  vertical-align: top;
+  margin: 0;
+}
+article .formRow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer {
+  width: 95%;
+  height: 0.4rem;
+  background: #2980b9;
+  margin: auto;
+  padding: 0 1px;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}

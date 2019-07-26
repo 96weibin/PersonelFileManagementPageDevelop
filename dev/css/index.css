@@ -1,0 +1,662 @@
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 86px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 86px;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  html {
+    font-size: 89x;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  html {
+    font-size: 92px;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  html {
+    font-size: 100px;
+  }
+}
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+.edit {
+  background: rgba(218, 158, 114, 0.8);
+}
+.numLine {
+  background: rgba(249, 249, 249, 0.8);
+}
+.evenLine {
+  background: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.14rem;
+}
+html {
+  min-width: 1580px;
+  width: 100%;
+  height: 100%;
+}
+body {
+  color: #424242;
+  width: 100%;
+}
+header {
+  background: #fff;
+  width: 100%;
+  height: 0.5rem;
+}
+header .title {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin: 0.1rem 0 0 0.5rem;
+  float: left;
+  font-size: 0.3rem;
+  font-weight: bold;
+  color: rgba(41, 128, 185, 0.8);
+}
+header .userInfo {
+  float: right;
+  color: #95a5a6;
+}
+header .userInfo .uId,
+header .userInfo .uName,
+header .userInfo span {
+  float: left;
+}
+header .btns {
+  height: 0.4rem;
+  width: 2rem;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.4rem;
+  float: right;
+  margin: 0 0.5rem 0 0;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+  color: #ecf0f0;
+  font-weight: bold;
+}
+header .btns .refresh,
+header .btns .search,
+header .btns .save,
+header .btns .export {
+  cursor: pointer;
+  border-right: 1px solid #DDDDDD;
+  width: 0.5rem;
+  height: 0.4rem;
+  transition: 0.2s ease-in-out;
+}
+header .btns .refresh {
+  background: rgba(68, 169, 111, 0.8);
+}
+header .btns .search {
+  background: rgba(55, 130, 87, 0.8);
+}
+header .btns .save {
+  background: rgba(37, 86, 58, 0.8);
+}
+header .btns .export {
+  background: rgba(23, 51, 35, 0.8);
+}
+header .btns .refresh:hover,
+header .btns .search:hover,
+header .btns .save:hover,
+header .btns .export:hover {
+  height: 0.5rem;
+}
+header .btns div {
+  float: left;
+  box-sizing: border-box;
+}
+nav {
+  width: 98%;
+  margin: auto;
+  margin-top: 0.2rem;
+  padding: 0 1px;
+  color: #2980b9;
+  background: #ccc;
+}
+nav .chosen-container {
+  height: 0.3rem;
+  padding: 0;
+  margin-top: 0.05rem;
+  border: none;
+  font-size: 0.14rem;
+  float: left;
+  z-index: 4;
+  line-height: 0.3rem;
+}
+nav .chosen-container .chosen-choices {
+  padding: 0;
+}
+nav .chosen-container .chosen-single {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  border-radius: 0.03rem;
+  border-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+nav .chosen-container .chosen-single b {
+  margin-top: 0.04rem;
+}
+nav .chosen-container .chosen-single .search-choice-close {
+  margin-top: 2px;
+  right: 18px;
+}
+nav label {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-top: 0.05rem;
+  line-height: 0.3rem;
+}
+nav .item {
+  height: 0.3rem;
+  padding: 0;
+  margin-top: 0.05rem;
+  border: none;
+  border-radius: 0.03rem;
+  float: left;
+}
+nav .line {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(236, 240, 240, 0.8);
+}
+nav .numInp {
+  width: 0.3rem;
+}
+nav .oDate {
+  height: 0.3rem;
+  border: none;
+  margin: 0;
+  border-radius: 0.03rem;
+}
+nav .oDate input {
+  padding: 0;
+  height: 0.3rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background: #fff;
+}
+nav .oDate .input-group-addon {
+  padding: 0;
+  height: 0.3rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  font-size: none;
+  background: #fff;
+}
+nav .oDate .input-group-addon .glyphicon {
+  padding: 0;
+  width: auto;
+  top: 0;
+  vertical-align: top;
+  margin: 0;
+}
+nav .dateWrapper {
+  width: 0.7rem;
+}
+nav .firstLine {
+  background: #ccc;
+}
+nav .firstLine .searchScope {
+  width: 0.5rem;
+}
+nav .firstLine .searchDept {
+  width: 0.8rem;
+}
+nav .firstLine .searchEmployee_FK {
+  width: 0.7rem;
+}
+nav .firstLine .searchSources {
+  width: 0.7rem;
+  z-index: 5;
+}
+nav .firstLine .searchEmployeeName {
+  width: 0.5rem;
+}
+nav .firstLine .searchJobType {
+  width: 0.5rem;
+}
+nav .firstLine .searchSource {
+  width: 0.5rem;
+}
+nav .firstLine .searchEducationBackground {
+  width: 0.5rem;
+}
+nav .firstLine .searchOperation {
+  width: 0.8rem;
+}
+nav .firstLine .searchOperationPosition {
+  width: 0.8rem;
+}
+nav .firstLine .searchJobTitle {
+  width: 0.8rem;
+}
+nav .firstLine .searchTrainingMachine {
+  width: 0.7rem;
+}
+nav .firstLine .searchReasonsForFailure {
+  width: 0.7rem;
+}
+nav .firstLine .searchOnJob {
+  width: 0.3rem;
+}
+nav .secondLine .searchDimissionType {
+  width: 0.7rem;
+}
+article {
+  width: 98%;
+  margin: auto;
+  border-left: 1px solid rgba(41, 128, 185, 0.8);
+  border-bottom: 1px solid rgba(41, 128, 185, 0.8);
+  border-right: 1px solid rgba(41, 128, 185, 0.8);
+  position: relative;
+  overflow: auto;
+  height: 5rem;
+}
+article .wait {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.4rem;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 999;
+}
+article .wait img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+  animation: zhuandong 2s ease-in-out infinite;
+}
+article .item {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  padding: 0 0.05rem;
+  border: 1px solid #DDDDDD;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+}
+article .item input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+article .lineNum {
+  width: 0.3rem;
+}
+article .emoloyee_FK {
+  width: 0.8rem;
+}
+article .employee_name {
+  width: 0.6rem;
+}
+article .sex {
+  width: 0.4rem;
+}
+article .jobTitle {
+  width: 0.8rem;
+}
+article .jobType {
+  width: 0.7rem;
+}
+article .source {
+  width: 0.9rem;
+}
+article .groups {
+  width: 0.5rem;
+}
+article .educationBackground {
+  width: 0.5rem;
+}
+article .dateOfRegister {
+  width: 0.85rem;
+}
+article .dateOfPositive {
+  width: 0.85rem;
+}
+article .operation {
+  width: 0.7rem;
+}
+article .operationPosition {
+  width: 0.7rem;
+}
+article .trainer {
+  width: 1.4rem;
+}
+article .trainer .chosen-container {
+  padding: 0;
+  border: none;
+  font-size: 0.14rem;
+  float: left;
+}
+article .trainer .chosen-container .chosen-single {
+  margin: 0;
+  height: 100%;
+  padding: 0 0 0 4px;
+  border-radius: 0.03rem;
+  border-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+article .trainer .chosen-container .chosen-single b {
+  margin-top: 0.04rem;
+}
+article .trainer .chosen-container .chosen-single .search-choice-close {
+  margin-top: 2px;
+  right: 18px;
+}
+article .oldTeacher {
+  width: 1.4rem;
+}
+article .oldTeacher .chosen-container {
+  height: 100%;
+  padding: 0;
+  border: none;
+  font-size: 0.14rem;
+  float: left;
+}
+article .oldTeacher .chosen-container .chosen-single {
+  margin: 0;
+  height: 100%;
+  padding: 0 0 0 4px;
+  border-radius: 0.03rem;
+  border-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+}
+article .oldTeacher .chosen-container .chosen-single b {
+  margin-top: 0.04rem;
+}
+article .oldTeacher .chosen-container .chosen-single .search-choice-close {
+  margin-top: 2px;
+  right: 18px;
+}
+article .dateOfBeginTraining {
+  width: 0.9rem;
+}
+article .dateOfFinishTraining {
+  width: 0.9rem;
+}
+article .actualTrainingCycle {
+  width: 0.9rem;
+}
+article .standardTrainingCycle {
+  width: 0.9rem;
+}
+article .oneTimesPass {
+  width: 0.9rem;
+}
+article .trainingMachine {
+  width: 0.7rem;
+}
+article .reasonsForFailure {
+  width: 0.8rem;
+}
+article .dateOfWork {
+  width: 0.8rem;
+}
+article .onTheJob {
+  width: 0.7rem;
+}
+article .dayOfOnJob {
+  width: 0.7rem;
+}
+article .yearOfOnJob {
+  width: 0.7rem;
+}
+article .dateOfResign {
+  width: 0.8rem;
+}
+article .abolish {
+  width: 0.7rem;
+}
+article .dimissionType {
+  width: 0.7rem;
+}
+article .dimissionReason {
+  width: 0.7rem;
+}
+article .telephone {
+  width: 1rem;
+}
+article .formTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.4rem;
+  background: rgba(34, 151, 228, 0.8);
+  height: 0.4rem;
+  z-index: 3;
+}
+article .firstRow {
+  width: 26.4rem;
+  margin-top: 0.4rem;
+}
+article .formRow {
+  width: 26.4rem;
+}
+article .formRow .source,
+article .formRow .educationBackground,
+article .formRow .dateOfBeginTraining,
+article .formRow .dateOfFinishTraining,
+article .formRow .trainer,
+article .formRow .oldTeacher,
+article .formRow .standardTrainingCycle,
+article .formRow .trainingMachine,
+article .formRow .reasonsForFailure,
+article .formRow .dimissionType,
+article .formRow .dimissionReason {
+  padding: 0;
+  position: relative;
+}
+article .formRow .source {
+  width: 1rem;
+}
+article .formRow .educationBackground {
+  width: 0.6rem;
+}
+article .formRow .dateOfBeginTraining {
+  width: 1rem;
+}
+article .formRow .dateOfFinishTraining {
+  width: 1rem;
+}
+article .formRow .trainer {
+  width: 1.5rem;
+  overflow: visible;
+}
+article .formRow .trainer select {
+  width: 100%;
+  height: 100%;
+}
+article .formRow .trainer .chosen-container {
+  height: 100%;
+}
+article .formRow .oldTeacher {
+  width: 1.5rem;
+  overflow: visible;
+}
+article .formRow .oldTeacher select {
+  width: 100%;
+  height: 100%;
+}
+article .formRow .standardTrainingCycle {
+  width: 1rem;
+}
+article .formRow .trainingMachine {
+  width: 0.8rem;
+}
+article .formRow .reasonsForFailure {
+  width: 0.9rem;
+}
+article .formRow .dimissionType {
+  width: 0.8rem;
+}
+article .formRow .dimissionReason {
+  width: 0.8rem;
+}
+article .formRow .oDate {
+  height: 0.4rem;
+  border: none;
+  margin: 0;
+}
+article .formRow .oDate input {
+  padding: 0;
+  height: 0.4rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  background: rgba(218, 158, 114, 0.8);
+}
+article .formRow .oDate .input-group-addon {
+  padding: 0;
+  height: 0.3rem;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  font-size: none;
+  background: rgba(218, 158, 114, 0.8);
+}
+article .formRow .oDate .input-group-addon .glyphicon {
+  padding: 0;
+  width: auto;
+  top: 0;
+  vertical-align: top;
+  margin: 0;
+}
+article .formRow::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer {
+  width: 98%;
+  height: 0.4rem;
+  background: rgba(41, 128, 185, 0.8);
+  margin: auto;
+  padding: 0 1px;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+footer .limit {
+  float: left;
+  margin-top: 0.05rem;
+  margin-left: 0.4rem;
+  height: 0.3rem;
+}
+footer .limit label {
+  float: left;
+  line-height: 0.3rem;
+  margin: 0;
+}
+footer .limit input {
+  float: left;
+  width: 0.4rem;
+  box-sizing: border-box;
+  line-height: 0.3rem;
+  height: 100%;
+}
+footer .pageControl {
+  width: 200px;
+  height: 0.4rem;
+  margin: 1px auto;
+}
+footer .pageControl .prePage {
+  float: left;
+  height: 0.2rem;
+  position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+footer .pageControl .prePage img {
+  margin-top: 7px;
+  height: 100%;
+}
+footer .pageControl .prePage:hover {
+  right: -2px;
+}
+footer .pageControl .nowPage {
+  float: left;
+  width: 30px;
+  height: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background: #ecf0f0;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+footer .pageControl span {
+  float: left;
+  line-height: 30px;
+  font-weight: bold;
+  color: #1afa29;
+  font-size: 24px;
+  margin: 0 5px;
+}
+footer .pageControl .allPage {
+  float: left;
+  width: 30px;
+  height: 20px;
+  margin-top: 5px;
+  border-radius: 4px;
+  background: #ecf0f0;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  background: #bdc3c7;
+}
+footer .pageControl .aftPage {
+  float: left;
+  height: 0.2rem;
+  position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+footer .pageControl .aftPage img {
+  margin-top: 7px;
+  height: 100%;
+}
+footer .pageControl .aftPage:hover {
+  left: -2px;
+}
+@keyframes zhuandong {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}

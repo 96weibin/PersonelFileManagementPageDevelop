@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./dist/img/ico.png" type="image/x-icon">
+  <title>人员档案追踪管理</title>
+  <link rel="stylesheet" href="./dist/css/animate/animate.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/bootstrap/datetimepicker.css">
+  <link rel="stylesheet" href="./dist/css/index.css">
+</head>
+
+<body>
+  <header>
+    <div class="title">人员档案追踪管理</div>
+    <div class="userInfo">
+      <div class="uId"></div>
+      <div class="uName"></div>
+    </div>
+    <div class="btns">
+      <div class="refresh">刷新</div>
+      <div class="search">搜索</div>
+      <div class="save">保存</div>
+    </div>
+  </header>
+  <nav>
+    <div class="baseInfo">
+      <label for="searchEmployee_FK">工号:</label>
+      <input type="text" class="searchEmployee_FK" id="searchEmployee_FK" name="searchEmployee_FK">
+      <label for="searchEmployeeName">姓名:</label>
+      <input type="text" class="searchEmployeeName" id="searchEmployeeName" name="searchEmployeeName">
+      <label for="searchSex">性别:</label>
+      <input type="text" class="searchSex" id="searchSex" name="searchSex">
+      <label for="searchJobType">工种类型:</label>
+      <input type="text" class="searchJobType" id="searchJobType" name="searchJobType">
+      <label for="searchSource">渠道来源:</label>
+      <input type="text" class="searchSource" id="searchSource" name="searchSource">
+      <label for="searchEducationBackground">学历:</label>
+      <input type="text" class="searchEducationBackground" id="searchEducationBackground" name="searchEducationBackground">
+      <label for="searchOperation">所分站点:</label>
+      <input type="text" class="searchOperation" id="searchOperation" name="searchOperation">
+      <label for="searchOperationPosition">岗位:</label>
+      <input type="text" class="searchOperationPosition" id="searchOperationPosition" name="searchOperationPosition">
+
+    </div>
+
+    <div class="dateInfo">
+      <label for="searchDateOfRegister">入职日期:</label>
+      <input type="text" class="searchDateOfRegister" id="searchDateOfRegister" name="searchDateOfRegister">
+      <label for="searchDateOfPositive">转正日期:</label>
+      <input type="text" class="searchDateOfPositive" id="searchDateOfPositive" name="searchDateOfPositive">
+      <label for="searchDateOfBeginTraining">培训开始日期:</label>
+      <input type="text" class="searchDateOfBeginTraining" id="searchDateOfBeginTraining"
+        name="searchDateOfBeginTraining">
+      <label for="searchDateOfFinishTraining">训练结束日期:</label>
+      <input type="text" class="searchDateOfFinishTraining" id="searchDateOfFinishTraining"
+        name="searchDateOfFinishTraining">
+      <label for="searchActualTrainingCycle">实际培训周期:</label>
+      <input type="text" class="searchActualTrainingCycle" id="searchActualTrainingCycle"
+        name="searchActualTrainingCycle">
+      <label for="searchStandardTrainingCycle">标准培训周期:</label>
+      <input type="text" class="searchStandardTrainingCycle" id="searchStandardTrainingCycle"
+        name="searchStandardTrainingCycle">
+      <label for="searchDateOfWork">下线日期:</label>
+      <input type="text" class="searchDateOfWork" id="searchDateOfWork" name="searchDateOfWork">
+      <label for="searchDayOfOnJob">在职天数:</label>
+      <input type="text" class="searchDayOfOnJob" id="searchDayOfOnJob" name="searchDayOfOnJob">
+      <label for="searchYearOfOnJob">在职年资:</label>
+      <input type="text" class="searchYearOfOnJob" id="searchYearOfOnJob" name="searchYearOfOnJob">
+    </div>
+    <div class="trainingInfo">
+      <label for="searchTrainer">对应训练员:</label>
+      <input type="text" class="searchTrainer" id="searchTrainer" name="searchTrainer">
+      <label for="searchOldTeacher">老带新师傅:</label>
+      <input type="text" class="searchOldTeacher" id="searchOldTeacher" name="searchOldTeacher">
+      <label for="searchOneTimesPass">是否一次通过:</label>
+      <input type="text" class="searchOneTimesPass" id="searchOneTimesPass" name="searchOneTimesPass">
+      <label for="searchTrainingMachine">培训机种:</label>
+      <input type="text" class="searchTrainingMachine" id="searchTrainingMachine" name="searchTrainingMachine">
+      <label for="searchReasonsForFailure">未通过原因:</label>
+      <input type="text" class="searchReasonsForFailure" id="searchReasonsForFailure" name="searchReasonsForFailure">
+      <label for="searchDimissionReason">离职原因:</label>
+      <input type="text" class="searchYearOfOnJob" id="searchYearOfOnJob" name="searchYearOfOnJob">
+      <label for="searchTelephone">联系电话:</label>
+      <input type="text" class="searchTelephone" id="searchTelephone" name="searchTelephone">
+    </div>
+  </nav>
+  <!-- <aside>
+    top
+  </aside> -->
+  <article>
+    <div class="formTitle">
+      <div class="item lineNum">行号</div>
+      <div class="item emoloyee_FK">工号</div>
+      <div class="item employee_name">姓名</div>
+      <div class="item sex">性别</div>
+      <div class="item jobeTitle">职称</div>
+      <div class="item jobeType">工种类型</div>
+      <div class="item source">渠道来源</div>
+      <div class="item educationBackground">学历</div>
+      <div class="item dateOfRegister">入职日期</div>
+      <div class="item dateOfPositive">转正日期</div>
+      <div class="item operation">所分站点</div>
+      <div class="item operationPosition">岗位</div>
+      <div class="item trainer">对应训练员</div>
+      <div class="item oldTeacher">老带新师傅</div>
+      <div class="item dateOfBeginTraining">培训开始日期</div>
+      <div class="item dateOfFinishTraining">培训结束日期</div>
+      <div class="item actualTrainingCycle">实际培训周期</div>
+      <div class="item standardTrainingCycle">标准培训周期</div>
+      <div class="item oneTimesPass">是否一次通过</div>
+      <div class="item trainingMachine">培训机种</div>
+      <div class="item reasonsForFailure">未通过原因</div>
+      <div class="item dateOfWork">下线日期</div>
+      <div class="item onTheJob">是否在职</div>
+      <div class="item dayOfOnJob">在职天数</div>
+      <div class="item yearOfOnJob">在职年资</div>
+      <div class="item dateOfResign">离职日期</div>
+      <div class="item abolish">是否废止</div>
+      <div class="item dimissionType">离职类型</div>
+      <div class="item dimissionReason">离职原因</div>
+      <div class="item telephone">联系电话</div>
+    </div>
+    <div class="formRow firstRow">
+      <div class="lineNum item">1</div>
+      <div class="emoloyee_FK item">C1811009</div>
+      <div class="employee_name item">赵伟斌</div>
+      <div class="sex item">男</div>
+      <div class="jobeTitle item">工程师</div>
+      <div class="jobeType item">正式工</div>
+      <div class="source item">
+        <input type="text" id="source" name="source" class="edit" value="社会招聘">
+      </div>
+      <div class="educationBackground item">
+        <input type="text" id="educationBackground" class="edit" name="educationBackground" value="本科">
+      </div>
+      <div class="dateOfRegister item">2018-11-23</div>
+      <div class="dateOfPositive item">2019-02-23</div>
+      <div class="operation item">LAT2</div>
+      <div class="operationPosition item">领班</div>
+      <div class="trainer item">
+        <input type="text" class="edit" id="trainer" name="trainer" value="老陈">
+      </div>
+      <div class="oldTeacher item">
+        <input type="text" id="oldTeacher" class="edit" name="oldTeacher" value="老王">
+      </div>
+      <div class="dateOfBeginTraining item">
+        <div class="input-group oDate date form_date" data-date-format="yyyy/mm/dd">
+          <input class="form-control" id="trainingStartDate" name="trainingStartDate" value="2018/11/12" type="text"
+            readonly>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+      </div>
+      <div class="dateOfFinishTraining item">
+        <div class="input-group oDate date form_date" data-date-format="yyyy/mm/dd">
+          <input class="form-control" id="trainingEndDate" name="trainingEndDate" value="2018/11/12" type="text"
+            readonly>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+      </div>
+      <div class="actualTrainingCycle item">90天</div>
+      <div class="standardTrainingCycle item">
+        <input type="text" id="standardTrainingCycle" class="edit" name="standardTrainingCycle" value="90天">
+      </div>
+      <div class="oneTimesPass item">是</div>
+      <div class="trainingMachine item">
+        <input type="text" id="trainingMachine" class="edit" name="trainingMachine" value="7000">
+      </div>
+      <div class="reasonsForFailure item">
+        <input type="text" id="reasonsForFailure" class="edit" name="reasonsForFailure" value="未通过原因">
+      </div>
+      <div class="dateOfWork item">2018-11-24</div>
+      <div class="onTheJob item">是</div>
+      <div class="dayOfOnJob item">120</div>
+      <div class="yearOfOnJob item">0.3</div>
+      <div class="dateOfResign item">2019-02-24</div>
+      <div class="abolish item">否</div>
+      <div class="dimissionType item">
+        <input type="text" id="dimissionType" class="edit" name="dimissionType" value="辞职">
+      </div>
+      <div class="dimissionReason item">
+        <input type="text" id="dimissionReason" class="edit" name="dimissionReason" value="离职原因">
+      </div>
+      <div class="telephone item">15764501228</div>
+    </div>
+    <div class="formRow">
+      <div class="lineNum item">1</div>
+      <div class="emoloyee_FK item">C1811009</div>
+      <div class="employee_name item">赵伟斌</div>
+      <div class="sex item">男</div>
+      <div class="jobeTitle item">工程师</div>
+      <div class="jobeType item">正式工</div>
+      <div class="source item">
+        <input type="text" id="source" name="source" class="edit" value="社会招聘">
+      </div>
+      <div class="educationBackground item">
+        <input type="text" id="educationBackground" class="edit" name="educationBackground" value="本科">
+      </div>
+      <div class="dateOfRegister item">2018-11-23</div>
+      <div class="dateOfPositive item">2019-02-23</div>
+      <div class="operation item">LAT2</div>
+      <div class="operationPosition item">领班</div>
+      <div class="trainer item">
+        <input type="text" class="edit" id="trainer" name="trainer" value="老陈">
+      </div>
+      <div class="oldTeacher item">
+        <input type="text" id="oldTeacher" class="edit" name="oldTeacher" value="老王">
+      </div>
+      <div class="dateOfBeginTraining item">
+        <div class="input-group oDate date form_date" data-date-format="yyyy/mm/dd">
+          <input class="form-control" id="trainingStartDate" name="trainingStartDate" value="2018/11/12" type="text"
+            readonly>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+      </div>
+      <div class="dateOfFinishTraining item">
+        <div class="input-group oDate date form_date" data-date-format="yyyy/mm/dd">
+          <input class="form-control" id="trainingEndDate" name="trainingEndDate" value="2018/11/12" type="text"
+            readonly>
+          <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+      </div>
+      <div class="actualTrainingCycle item">90天</div>
+      <div class="standardTrainingCycle item">
+        <input type="text" id="standardTrainingCycle" class="edit" name="standardTrainingCycle" value="90天">
+      </div>
+      <div class="oneTimesPass item">是</div>
+      <div class="trainingMachine item">
+        <input type="text" id="trainingMachine" class="edit" name="trainingMachine" value="7000">
+      </div>
+      <div class="reasonsForFailure item">
+        <input type="text" id="reasonsForFailure" class="edit" name="reasonsForFailure" value="未通过原因">
+      </div>
+      <div class="dateOfWork item">2018-11-24</div>
+      <div class="onTheJob item">是</div>
+      <div class="dayOfOnJob item">120</div>
+      <div class="yearOfOnJob item">0.3</div>
+      <div class="dateOfResign item">2019-02-24</div>
+      <div class="abolish item">否</div>
+      <div class="dimissionType item">
+        <input type="text" id="dimissionType" class="edit" name="dimissionType" value="辞职">
+      </div>
+      <div class="dimissionReason item">
+        <input type="text" id="dimissionReason" class="edit" name="dimissionReason" value="离职原因">
+      </div>
+      <div class="telephone item">15764501228</div>
+    </div>
+
+    
+  </article>
+  <footer>
+    <div class="pageControl"></div>
+  </footer>
+  <!--[if lt IE 9]>
+    <script src="./moDist/js/bootstrap/html5shiv.min.js"></script>
+  <![endif]-->
+  <script src="./dist/js/jQuery/jquery-1.10.2.min.js"></script>
+  <script src="./dist/js/bootstrap/bootstrap.min.js"></script>
+  <script src="./dist/js/bootstrap/bootstrap-datetimepicker.js"></script>
+  <script src="./dist/js/bootstrap/bootstrap-datetimepicker.fr.js"></script>
+  <script src="./dist/js/bootstrap/respond.min.js"></script>
+  <script src="./dist/js/util.js"></script>
+  <script src="./dist/js/index.js"></script>
+</body>
+
+</html>

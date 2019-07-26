@@ -1,0 +1,965 @@
+//常用色
+@green1: #378257cc;
+@green2: #25563acc;
+@green3: #44a96fcc;
+@green4: #173323cc;
+
+@blue: #2980b9;
+@blue2:#2297e4;
+@purple: #9b59b6;
+@purple: #8e44ad;
+@dark: #34495e;
+@dark2: #2c3e50;
+@dark3: #282828;
+
+@yellow: #f1c40f;
+@orange: #da9e72cc;
+@orange2: #e67e22;
+@orange3: #d35400;
+@red: #e74c3c;
+
+@red2: #c0392b;
+@white: #ecf0f0;
+@white2: #F9F9F9;
+@white3 : #ccc;
+
+@gray0: #DDDDDD;
+@gray: #bdc3c7;
+@gray2: #95a5a6;
+@gray3: #7f8c8d;
+
+@bodyColor :#424242;
+@navColor:@blue;
+
+//表格栏位宽度
+@lineNum_width:0.3rem;
+@emoloyee_FK_width:0.8rem;
+@employee_name_width:0.6rem;
+@sex_width:0.4rem;
+@jobTitle_width:0.8rem;
+@jobType_width:0.7rem;
+@source_width:0.9rem;
+@groups_width:0.5rem;
+@educationBackground_width:0.5rem;
+@dateOfRegister_width:0.85rem;
+@dateOfPositive_width:0.85rem;
+@operation_width:0.7rem;
+@operationPosition_width:0.7rem;
+@trainer_width:1.4rem;
+@oldTeacher_width:1.4rem;
+@dateOfBeginTraining_width:0.9rem;
+@dateOfFinishTraining_width:0.9rem;
+@actualTrainingCycle_width:0.9rem;
+@standardTrainingCycle_width:0.9rem;
+@oneTimesPass_width:0.9rem;
+@trainingMachine_width:0.7rem;
+@reasonsForFailure_width:0.8rem;
+@dateOfWork_width:0.8rem;
+@onTheJob_width:0.7rem;
+@dayOfOnJob_width:0.7rem;
+@yearOfOnJob_width:0.7rem;
+@dateOfResign_width:0.8rem;
+@abolish_width:0.7rem;
+@dimissionType_width:0.7rem;
+@dimissionReason_width:0.7rem;
+@telephone_width:1rem;
+@formTitle_width:@lineNum_width 
++ @emoloyee_FK_width 
++ @employee_name_width 
++ @sex_width 
++ @jobTitle_width 
++ @jobType_width
++ @source_width
++ @educationBackground_width
++ @dateOfRegister_width
++ @dateOfPositive_width
++ @operation_width
++ @operationPosition_width
++ @trainer_width
++ @oldTeacher_width
++ @dateOfBeginTraining_width
++ @dateOfFinishTraining_width
++ @actualTrainingCycle_width
++ @standardTrainingCycle_width
++ @oneTimesPass_width
++ @trainingMachine_width
++ @reasonsForFailure_width
++ @onTheJob_width
++ @groups_width
++ @yearOfOnJob_width
++ @dateOfResign_width
++ @abolish_width
++ @dimissionType_width
++ @dimissionReason_width
++ @telephone_width + (0.12 * 30) + 0.1;
+//总宽度 = width + padding + border + 误差区间
+
+//+ @dayOfOnJob_width
+//+ @dateOfWork_width
+
+
+
+//媒体查询 根标签字体 自适应 
+//由于 浏览器字体最小 12px 所以不能很好的结合rem 进行全尺寸的 自适应。
+// @media only screen and (max-width:500px) {
+//   html {
+//     font-size: 35px;
+//   }
+// }
+// @media only screen and (min-width:500px){
+//   html {
+//     font-size: 35px;
+//   }
+// }
+// @media only screen and (min-width:600px) {
+//   html {
+//     font-size: 42px;
+//   }
+// }
+// @media only screen and (min-width:700px) {
+//   html {
+//     font-size: 50px;
+//   }
+// }
+// @media only screen and (min-width:800px) {
+//   html {
+//     font-size: 57px;
+//   }
+// }
+// @media only screen and (min-width:900px) {
+//   html {
+//     font-size: 64px;
+//   }
+// }
+// @media only screen and (min-width:1000px) {
+//   html {
+//     font-size: 71px;
+//   }
+// }
+// @media only screen and (min-width:1100px) {
+//   html {
+//     font-size: 78px;
+//   }
+// }
+@media only screen and (max-width:1200px) {
+    html {
+      font-size: 86px;
+    }
+  }
+@media only screen and (min-width:1200px) {
+  html {
+    font-size: 86px;
+  }
+}
+@media only screen and (min-width:1250px) {
+  html {
+    font-size: 89x;
+  }
+}
+@media only screen and (min-width:1300px) {
+  html {
+    font-size: 92px;
+  }
+}
+@media only screen and (min-width:1350px) {
+  html {
+    font-size: 96px;
+  }
+}
+//screen 1400px font-size 100px 14rem 为全屏 
+@media only screen and (min-width:1400px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+.clear {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.edit {
+  background: fade(@orange,80%);
+}
+.numLine{
+  background: fade(@white2,80%);
+}
+.evenLine{
+  background: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.14rem;
+}
+
+html {
+  // width: 30rem;
+  min-width: 1580px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  // width: 30rem;
+  color: @bodyColor;
+  width: 100%;
+}
+
+header {
+  background: #fff;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 0.5rem;
+  // z-index: 3;
+  .title {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    // position: fixed;
+    // top: 0.1rem;
+    // left: 0.5rem;
+    margin: 0.1rem 0 0 0.5rem;
+    float: left;
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: fade(@blue,80%);
+  }
+  .userInfo{
+    float: right;
+    .uId,.uName,span{
+      float: left;;
+    }
+    color:@gray2;
+
+  }
+  .btns {
+    height: 0.4rem;
+    width: 2rem;
+    font-size: 0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+    // position: fixed;
+    // top: 0.1rem;
+    // left: rem;
+    float: right;
+    margin: 0 0.5rem 0 0;
+    border-bottom-left-radius: 0.1rem;
+    border-bottom-right-radius: 0.1rem;
+    color: @white;
+    // background: @green1;
+    font-weight: bold;
+    .refresh,.search,.save,.export{
+      cursor: pointer;
+      border-right: 1px solid @gray0;
+      width: 0.5rem;
+      height:0.4rem;
+      transition: 0.2s ease-in-out;
+    }
+    .refresh{
+      background: fade(@green3,80%);
+    }
+    .search{
+      background: fade(@green1,80%);
+    }
+    .save{
+      background: fade(@green2,80%);
+    }
+    .export{
+      background: fade(@green4,80%);
+    }
+    .refresh:hover,.search:hover,.save:hover,.export:hover{
+      height: 0.5rem;
+    }
+    div{
+      float: left;
+      box-sizing: border-box;
+    }
+  }
+}
+
+nav {
+  width: 98%;
+  margin: auto;
+  margin-top:0.2rem;
+  padding: 0 1px;
+  color: @navColor;
+  // height: 1.5rem;
+  background: @white3;
+  .chosen-container{
+    height: 0.3rem;
+    padding: 0;
+    margin-top: 0.05rem;
+    border: none;
+    font-size: 0.14rem;
+    float: left;
+    z-index: 4;
+    line-height: 0.3rem;
+    .chosen-choices{
+      padding: 0;
+    }
+    .chosen-single{
+      margin: 0;
+      height: 100%;
+      padding: 0;
+      border-radius: 0.03rem;
+      border-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      b{
+        margin-top: 0.04rem;
+      }
+      .search-choice-close{
+        margin-top: 2px;
+        right: 18px;
+      }
+    }
+  }
+  
+  label{
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 0.05rem;
+    line-height: 0.3rem;
+    // font-weight: lighter;
+  }
+  .item{
+    height: 0.3rem;
+    padding: 0;
+    margin-top: 0.05rem;
+    border: none;
+    border-radius: 0.03rem;
+    float: left;
+  }
+  .line{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    box-sizing: border-box;
+    border: 1px solid fade(@white,80%);
+  }
+  .numInp{
+    width: 0.3rem;
+  }
+  .oDate{
+    height: 0.3rem;
+    border: none;
+    margin: 0;
+    border-radius: 0.03rem;
+    input{
+      padding: 0;
+      height: 0.3rem;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      background: #fff;
+    }
+    .input-group-addon{
+      padding: 0;
+      height: 0.3rem;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      font-size: none;
+      background: #fff;
+      .glyphicon{
+        padding: 0;
+        width: auto;
+        top: 0;
+        vertical-align: top;
+        margin: 0;
+      }
+    }
+  }
+  .dateWrapper{
+    width: 0.7rem;
+  }
+
+  .firstLine{
+
+    background: @white3;
+    .searchScope{
+      width:0.5rem;
+    }
+    .searchDept{
+      width: 0.8rem;
+    }
+    .searchEmployee_FK{
+      width: 0.7rem;
+    }
+    .searchSources{
+      width: 0.7rem;
+      z-index: 5;
+    }
+    .searchEmployeeName{
+      width: 0.5rem;
+    }
+    .searchJobType{
+      width: 0.5rem;
+    }
+    .searchSource{
+      width: 0.5rem;
+    }
+    .searchEducationBackground{
+      width: 0.5rem;
+    }
+    .searchOperation{
+      width: 0.8rem;
+    }
+    .searchOperationPosition{
+      width: 0.8rem;
+    }
+    .searchJobTitle{
+      width: 0.8rem;
+    }
+    .searchTrainingMachine{
+      width: 0.7rem;
+    }
+    .searchReasonsForFailure{
+      width: 0.7rem;
+    }
+    .searchOnJob{
+      width: 0.3rem;
+    }
+  }
+  .secondLine{
+    
+    .searchDimissionType{
+      width: 0.7rem;
+    }
+  }
+
+  //下面为 修改nav前的 less
+  // .baseInfo{
+  //   background: fade(@gray0,80%);
+  //   .searchEmployee_FK{
+  //     width: 0.7rem;
+  //   }
+  //   .searchEmployeeName{
+  //     width: 0.6rem;
+  //   }
+  //   .searchSex{
+  //     width: 0.4rem;
+  //   }
+  //   .searchJobType{
+  //     width: 0.7rem;
+  //   }
+  //   .searchSource{
+  //     width: 0.5rem;
+  //   }
+  //   .searchEducationBackground{
+  //     width: 0.5rem;
+  //   }
+  //   .searchOperation{
+  //     width: 1rem;
+  //   }
+  //   .searchOperationPosition{
+  //     width: 1rem;
+  //   }
+  //   .searchJobTitle{
+  //     width: 1rem;
+  //   }
+  // }
+  // .dateInfo{
+  //   background: fade(@gray,80%);
+  //   .oDate{
+  //     height: 0.3rem;
+  //     border: none;
+  //     margin: 0;
+  //     border-radius: 0.03rem;
+  //     input{
+  //       padding: 0;
+  //       height: 0.3rem;
+  //       border: none;
+  //       border-radius: 0;
+  //       margin: 0;
+  //       background: #fff;
+  //     }
+  //     .input-group-addon{
+  //       padding: 0;
+  //       height: 0.3rem;
+  //       border: none;
+  //       border-radius: 0;
+  //       margin: 0;
+  //       font-size: none;
+  //       background: #fff;
+  //       .glyphicon{
+  //         padding: 0;
+  //         width: auto;
+  //         top: 0;
+  //         vertical-align: top;
+  //         margin: 0;
+  //       }
+  //     }
+  //   }
+  //   .dateWrapper{
+  //     width: 0.9rem;
+  //   }
+    
+    
+  // }
+  // .cycleInfo{
+  //   background: fade(@gray2,50%);
+    // .numInp{
+    //   width: 0.5rem;
+    // }
+  //   .oDate{
+  //     height: 0.3rem;
+  //     border: none;
+  //     margin: 0;
+  //     border-radius: 0.03rem;
+  //     input{
+  //       padding: 0;
+  //       height: 0.3rem;
+  //       border: none;
+  //       border-radius: 0;
+  //       margin: 0;
+  //       background: #fff;
+  //     }
+  //     .input-group-addon{
+  //       padding: 0;
+  //       height: 0.3rem;
+  //       border: none;
+  //       border-radius: 0;
+  //       margin: 0;
+  //       font-size: none;
+  //       background: #fff;
+  //       .glyphicon{
+  //         padding: 0;
+  //         width: auto;
+  //         top: 0;
+  //         vertical-align: top;
+  //         margin: 0;
+  //       }
+  //     }
+  //   }
+  //   .dateWrapper{
+  //     width: 0.9rem;
+  //   }
+  // }
+  // .trainingInfo{
+  //   background: fade(@gray2,80%);
+  //   .searchTrainer{
+  //     width: 0.7rem;
+  //   }
+  //   .searchOldTeacher{
+  //     width: 0.7rem;
+  //   }
+  //   .searchOneTimesPass{
+  //     width: 0.4rem;
+  //   }
+  //   .searchTrainingMachine{
+  //     width: 0.7rem;
+  //   }
+  //   .searchReasonsForFailure{
+  //     width: 0.7rem;
+  //   }
+  //   .searchDimissionReason{
+  //     width: 0.7rem;
+  //   }
+  //   .searchDimissionType{
+  //     width: 0.7rem;
+  //   }
+  //   .searchTelephone{
+  //     width: 0.7rem;
+  //   }
+  // }
+
+}
+
+
+article {
+  width: 98%;
+  margin: auto;
+  border-left: 1px solid fade(@blue,80%);
+  border-bottom: 1px solid fade(@blue,80%);
+  border-right: 1px solid fade(@blue,80%);
+  position: relative;
+  overflow: auto;
+  height: 5rem;
+  .wait{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @formTitle_width;
+    height: 100%;
+    background: fade(@dark,80%);
+    z-index: 999;
+    
+    img{
+      position:absolute; 
+      top:50%;
+      left:50%;  
+      width: 50px;
+      transform:translate(-50%,-50%);
+      animation: zhuandong 2s ease-in-out infinite 
+    }
+  }
+  .item {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    padding: 0 0.05rem;
+    border: 1px solid @gray0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    input{
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+  .lineNum{
+    width:@lineNum_width;
+  }
+  .emoloyee_FK{
+    width: @emoloyee_FK_width;
+  }
+  .employee_name{
+    width: @employee_name_width;
+  }
+  .sex{
+    width:@sex_width;
+  }
+  .jobTitle{
+    width: @jobTitle_width;
+  }
+  .jobType{
+    width: @jobType_width;
+  }
+  .source{
+    width: @source_width;
+  }
+  .groups{
+    width: @groups_width;
+  }
+  .educationBackground{
+    width: @educationBackground_width;
+  }
+  .dateOfRegister{
+    width: @dateOfRegister_width;
+  }
+  .dateOfPositive{
+    width:@dateOfPositive_width;
+  }
+  .operation{
+    width: @operation_width;
+  }
+  .operationPosition{
+    width: @operationPosition_width;
+  }
+  .trainer{
+    width: @trainer_width;
+    .chosen-container{
+      padding: 0;
+      border: none;
+      font-size: 0.14rem;
+      float: left;
+      .chosen-single{
+        margin: 0;
+        height: 100%;
+        padding: 0 0 0 4px;
+        border-radius: 0.03rem;
+        border-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: pink;
+        b{
+          margin-top: 0.04rem;
+        }
+        .search-choice-close{
+          margin-top: 2px;
+          right: 18px;
+        }
+      }
+    }
+  }
+  .oldTeacher{
+    width: @oldTeacher_width;
+    .chosen-container{
+      height: 100%;
+      padding: 0;
+      border: none;
+      font-size: 0.14rem;
+      float: left;
+      .chosen-single{
+        margin: 0;
+        height: 100%;
+        padding: 0 0 0 4px;
+        border-radius: 0.03rem;
+        border-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: pink;
+        b{
+          margin-top: 0.04rem;
+        }
+        .search-choice-close{
+          margin-top: 2px;
+          right: 18px;
+        }
+      }
+    }
+  }
+  .dateOfBeginTraining{
+    width: @dateOfBeginTraining_width;
+  }
+  .dateOfFinishTraining{
+    width: @dateOfFinishTraining_width;
+  }
+  .actualTrainingCycle{
+    width:@actualTrainingCycle_width;
+  }
+  .standardTrainingCycle{
+    width: @standardTrainingCycle_width;
+  }
+  .oneTimesPass{
+    width: @oneTimesPass_width;
+  }
+  .trainingMachine{
+    width: @trainingMachine_width;
+  }
+  .reasonsForFailure{
+    width: @reasonsForFailure_width;
+  }
+  .dateOfWork{
+    width: @dateOfWork_width;
+  }
+  .onTheJob{
+    width: @onTheJob_width;
+  }
+  .dayOfOnJob{
+    width: @dayOfOnJob_width;
+  }
+  .yearOfOnJob{
+    width: @yearOfOnJob_width;
+  }
+  .dateOfResign{
+    width: @dateOfResign_width;
+  }
+  .abolish{
+    width: @abolish_width;
+  }
+  .dimissionType{
+    width: @dimissionType_width;
+  }
+  .dimissionReason{
+    width: @dimissionReason_width;
+  }
+  .telephone{
+    width: @telephone_width;
+  }
+  .formTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @formTitle_width;
+    background: fade(@blue2,80%);
+    height: 0.4rem;
+    z-index: 3;
+  }
+
+  .firstRow {
+    width: @formTitle_width;
+    margin-top: 0.4rem;
+  }
+  .formRow {
+    width: @formTitle_width;
+    .source,
+    .educationBackground,
+    .dateOfBeginTraining,
+    .dateOfFinishTraining,
+    .trainer,
+    .oldTeacher,
+    .standardTrainingCycle,
+    .trainingMachine,
+    .reasonsForFailure,
+    .dimissionType,
+    .dimissionReason{
+      padding: 0;
+      position: relative;
+    }
+    .source{
+      width: @source_width + 0.1rem;
+    }
+    .educationBackground{
+      width: @educationBackground_width + 0.1rem;
+    }
+    .dateOfBeginTraining{
+      width: @dateOfBeginTraining_width + 0.1rem;
+    }
+    .dateOfFinishTraining{
+      width: @dateOfFinishTraining_width + 0.1rem;
+    }
+
+    .trainer{
+      width: @trainer_width + 0.1rem;
+      overflow: visible;
+      select{
+        width: 100%;
+        height: 100%;
+      }
+      .chosen-container{
+        height: 100%;
+      }
+    }
+    .oldTeacher{
+      width: @oldTeacher_width + 0.1rem;
+      overflow: visible;
+      select{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .standardTrainingCycle{
+      width: @standardTrainingCycle_width + 0.1rem;
+    }
+    .trainingMachine{
+      width: @trainingMachine_width + 0.1rem;
+    }
+    .reasonsForFailure{
+      width: @reasonsForFailure_width + 0.1rem; 
+    }
+    .dimissionType{
+      width: @dimissionType_width + 0.1rem;
+    }
+    .dimissionReason{
+      width: @dimissionReason_width + 0.1rem;
+    }
+    .oDate{
+      height: 0.4rem;
+      border: none;
+      margin: 0;
+      input{
+        padding: 0;
+        height: 0.4rem;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        background: fade(@orange,80%);
+      }
+      .input-group-addon{
+        padding: 0;
+        height: 0.3rem;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        font-size: none;
+        background: fade(@orange,80%);
+        .glyphicon{
+          padding: 0;
+          width: auto;
+          top: 0;
+          vertical-align: top;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .formRow::after {
+    .clear;
+  }
+}
+footer{
+  width: 98%;
+  height: 0.4rem;
+  background: fade(@blue,80%);
+  margin: auto;
+  padding: 0 1px;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+  .limit{
+    float: left;
+    margin-top: 0.05rem;
+    margin-left: 0.4rem;
+    height: 0.3rem;
+    // width: 0.4rem;
+    label{
+      float: left;
+      // margin-top: 0.05rem;
+      line-height: 0.3rem;
+      margin: 0;
+    }
+    input{ 
+      float: left;
+      width: 0.4rem;
+      // margin-top: 0.05rem;
+      box-sizing: border-box;
+      line-height: 0.3rem;
+      height: 100%;
+    }
+
+  }
+  .pageControl {
+    width: 200px;
+    height: 0.4rem;
+    margin: 1px auto;
+
+    .prePage {
+      float: left;
+      height: 0.2rem;
+      position: relative;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      img {
+        margin-top: 7px;
+        height: 100%;
+      }
+    }
+
+    .prePage:hover {
+      right: -2px;
+    }
+
+    .nowPage {
+      float: left;
+      width: 30px;
+      height: 20px;
+      margin-top: 5px;
+      border-radius: 4px;
+      background: @white;
+      line-height: 24px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    span {
+      float: left;
+      line-height: 30px;
+      font-weight: bold;
+      color: #1afa29;
+      font-size: 24px;
+      margin: 0 5px;
+    }
+
+    .allPage {
+      .nowPage;
+      background: @gray;
+    }
+
+    .aftPage {
+      .prePage;
+    }
+
+    .aftPage:hover {
+      left: -2px;
+    }
+  }
+}
+
+@keyframes zhuandong {
+  from{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%,-50%) rotate(-360deg);
+  }
+}
